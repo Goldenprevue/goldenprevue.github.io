@@ -34,18 +34,21 @@
     <script
       src="https://kit.fontawesome.com/358bc0b86f.js"
       crossorigin="anonymous"></script>
+    <script
+      src="../src/main.js"
+      defer></script>
     <title>Home - 0Gun Kim</title>
   </head>
   <body>
-    <nav id="navbar">
+    <nav class="navbar">
       <div class="navbar-logo">
         <a href="#">
-        <img
-          src="../img/small-logo.png"
-          alt="logo" />
+          <img
+            src="../img/small-logo.png"
+            alt="logo" />
         </a>
       </div>
-      <ul class="navbar-menu sansserif">
+      <ul class="navbar-menu sansserif nav-hidden">
         <li class="navbar-item one active">PROFILE</li>
         <li class="navbar-item two">SKILLS</li>
         <li class="navbar-item three">PROJECTS</li>
@@ -53,94 +56,131 @@
         <li class="navbar-item five">CONTACT</li>
       </ul>
     </nav>
-    <section class="main">
-      <div class="m-profile">PROFILE</div>
-      <div class="m-skill">skill</div>
-      <div class="m-projects">projects</div>
-      <div class="m-comment">comment</div>
-      <div class="m-contact">contact</div>
-      <img
-        class="main-log avatar"
-        src="../img/logo.png"
-        alt="barcode" />
+    <section id="main">
+      <div class="round">
+        <div class="circle-box">
+          <div class="m-profile item"><span>PROFILE</span></div>
+          <div class="m-skill item"><span>SKILLS</span></div>
+          <div class="m-projects item"><span>PROJECTS</span></div>
+          <div class="m-comment item"><span>COMMENT</span></div>
+          <div class="m-contact item"><span>CONTENTS</span></div>
+        </div>
+      </div>
     </section>
     <br />
-    <div class="line"></div>
     <section class="profile">
+      <div class="line profile-line"></div>
       <div class="avatar">
         <img
           src="../img/profile-pre.png"
           alt="profile" />
       </div>
-      <h2 class="profile-content contents">
+      <h1 class="kr">
         안녕하세요,<br />
         김영건 입니다
-      </h2>
-      <h2 class="profile-content contents ">
+      </h1>
+      <h2 class="profile-h2 kr">
         프론트엔드뿐만 아니라, 개발하는 모든 것을 좋아합니다
       </h2>
-      <p>능동적으로</p>
-      <p>능동적으로</p>
-      <p>능동적으로</p>
+      <div class="profile-content">
+        <p class="kr">능동적으로 팀원들과 소통을 통해서 목표달성</p>
+        <p>능동적으로</p>
+        <p>능동적으로</p>
+      </div>
       <div class="stack-img-box">
-        <div class="stack-box">
-          <i class="fa-brands fa-react fa-2xl fa-spin""></i>
-          
+        <div class="front-box icon-profile">
+          <i class="fa-brands fa-react"></i>
         </div>
-        <div class="stack-content contents">
-          <h3>Front-end</h3>
-          <p>CSS HTML Javascript React Typescript</p>
+        <h3 class="sansserif">FRONT-END</h3>
+        <div class="stack-content sansserif">
+          <p class="small">
+            CSS, HTML, JavaScript, React, TypeScript, Web APIs
+          </p>
         </div>
-        항해99 2022.7~10 <br />
-        여행업 2022.11~2023.1
+        <div class="education">
+          <h3 class="sansserif">EDUCATION</h3>
+
+          <p class="education-content kr">
+            <img
+              class="log-gugu"
+              src="../img/99.png"
+              alt="99logo" />
+            2022.7~10 <br />
+          </p>
+        </div>
       </div>
     </section>
-    <div class="line"></div>
-    <section class="skills">
-      <h1 class="sansserif">skill</h1>
+    <div class="line skill-line"></div>
+    <section class="skills sansserif">
+      <h1 class="">SKILLS</h1>
       <h2 class="des">skill & tools</h2>
-      <p> 내용들</p>
+      <p>
+        지속적으로 모르는 부분들을 파악해 매일매일 공부하고 있습니다.<br />
+        11월부터 스터디그룹을 만들어 Javascript, Browser 공부와 사이드
+        프로젝트를 진행중입니다.<br />
+        또한, 개인적으로 TypeScript를 공부하고 있고 TDD, 모바일, NODE.js 도 깊게
+        배워보고 싶습니다.
+      </p>
       <div class="skill-box">
         <div class="progress-box">
           <h3>Skills</h3>
-          <div class="skill-des">
-            <span>HTML</span>
-            <span>70%</span>
+          <div class="skill-list">
+            <div class="skill-des">
+              <span>HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-color"
+                style="width: 90%"></div>
+            </div>
+            <div class="skill-des">
+              <span>CSS</span>
+              <span>75%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-color"
+                style="width: 75%"></div>
+            </div>
+            <div class="skill-des">
+              <span>javascript</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-color"
+                style="width: 80%"></div>
+            </div>
+            <div class="skill-des">
+              <span>react</span>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-color"
+                style="width: 80%"></div>
+            </div>
+            <div class="skill-des">
+              <span>typescript</span>
+              <span>50%</span>
+            </div>
+            <div class="progress">
+              <div
+                class="progress-color"
+                style="width: 50%"></div>
+            </div>
           </div>
-<div class="progress">
-  <div class="progress-color"></div>
-</div>
-          <div class="skill-des">
-            <span>CSS</span>
-            <span>70%</span>
-          </div>
-<div class="progress">
-  <div class="progress-color"></div>
-</div>
-          <div class="skill-des">
-            <span>javascript</span>
-            <span>70%</span>
-          </div>
-<div class="progress">
-  <div class="progress-color"></div>
-</div>
-          <div class="skill-des">
-            <span>react</span>
-            <span>70%</span>
-          </div>
-<div class="progress">
-  <div class="progress-color"></div>
-</div>
-          <div class="skill-des">
-            <span>typescript</span>
-            <span>70%</span>
-          </div>
-<div class="progress">
-  <div class="progress-color"></div>
-</div>
         </div>
-        <div class="sub-box">
-          <h3 class="tools">tool</h3>
+        <div class="sub-box sansserif">
+          <h3 class="tools">Team Collaboration Tool</h3>
+          <ul class="tool-list">
+            <li>Visual Studio Code</li>
+            <li>GitHub</li>
+            <li>Notion</li>
+            <li>Slack</li>
+            <li></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -179,7 +219,7 @@
       <div class="e-mail"></div>
       <div class="link-box">
         <a href="https://github.com/Goldenprevue">
-        <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-github"></i>
         </a>
         <img
           src=""
