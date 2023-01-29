@@ -1,0 +1,75 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+:root {
+  width: 100%;
+  --background-color: #fafafa;
+  --font-color-title: #1d1d20;
+  --font-color-selfect: #535355;
+  --font-color-unselect: #717176;
+  --line-color: #717176;
+}
+i {
+  width: 30px;
+  height: 30px;
+}
+body {
+  background-color: var(--background-color);
+  width: 100%;
+}
+
+.contents {
+  font-family: 'NanumSquare', sans-serif;
+  /* font-weight: 300; */
+}
+.navbar-logo > img {
+  width: 80px;
+  height: 20px;
+}
+
+font {
+  font-family: 'Open Sans', sans-serif;
+}
+.sansserif {
+  font-family: 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+}
+
+.line {
+  border-bottom: 0.2px solid var(--line-color);
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 95%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-hide {
+  visibility: hidden;
+}
+
+.avatar > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.stack-box > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  filter: brightness(3.2);
+  /* filter: grayscale(80%); */
+}
+
+/* @media screen and (max-width: 700px) {
+  :root {
+    width: 100%;
+    --background-color: #fafafa;
+    --font-color-title: #1d1d20;
+    --font-color-selfect: #535355;
+    --font-color-unselect: #717176;
+    --line-color-red: rgb(17, 16, 16);
+  }
+} */
