@@ -1,4 +1,4 @@
-const nav = document.querySelector('.navbar-menu');
+const nav = document.querySelector('.navbar');
 const profile = document.querySelector('.one');
 const profileR = document.querySelector('.m-profile');
 const skills = document.querySelector('.two');
