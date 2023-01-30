@@ -88,6 +88,10 @@ p {
   color: var(--color-dark-gray);
   margin: 4px 0;
 }
+.fa-github:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 .small {
   font-size: var(--font-small);
 }
@@ -286,7 +290,7 @@ section {
 .profile-h2 {
   margin: 40px auto;
 }
-.fa-brands:hover {
+.fa-react:hover {
   color: var(--rainbow-red);
   transform: rotate(-20deg) scale(2.2);
 }
@@ -294,6 +298,12 @@ section {
   transition: all var(--animation-duration) ease;
   color: #087de4;
   font-size: 60px;
+}
+.stack-img-box {
+  margin-top: 100px;
+}
+.stack-img-box h3 {
+  margin-top: 20px;
 }
 .front-box {
   display: flex;
@@ -313,7 +323,7 @@ section {
   margin: 10px auto;
 }
 .education {
-  margin: 50px auto;
+  margin: 100px auto;
 }
 .log-gugu {
   margin-top: 7px;
@@ -321,6 +331,8 @@ section {
 
 .skills {
   background-color: var(--color-gray);
+  height: 70vh;
+  max-height: 800px;
 }
 .skill-box {
   display: flex;
@@ -368,11 +380,17 @@ section {
   height: 5px;
   background-color: rgb(238, 146, 40);
 }
+.projects-containal {
+  width: 100vw;
+  height: 90vh;
+  max-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .projects-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 .project-item {
   position: relative;
@@ -395,14 +413,12 @@ section {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: all 0.7s ease;
-  transform: translateX(-15px);
+  transition: all 0.5s ease;
   cursor: pointer;
   border-radius: 7px;
 }
 .project-item:hover .project-description {
-  opacity: 0.8;
-  transform: translateX(0px);
+  opacity: 0.9;
 }
 .project-description h3 {
   color: var(--background-color);
@@ -415,10 +431,56 @@ section {
   height: 2px;
   background-color: #171819;
 }
+.comment {
+  height: 95vh;
+  max-height: 800px;
+}
+.comment h1 {
+  margin-top: 50px;
+}
+.comment-profile {
+  width: 300px;
+  height: 300px;
+}
+.comment-profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.comment-content {
+  width: 750px;
+  margin-top: 120px;
+  font-size: 17;
+  opacity: 0.7;
+  text-align: left;
+}
+.comment-containal {
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  height: 60vh;
+  max-height: 450px;
+  margin-top: 40px;
+  background-color: var(--color-gray);
+}
+.contact h1 {
+  margin-top: 70px;
+}
+.link-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-box i {
+  margin-top: 50px;
+  font-size: 70px;
+  margin: 50px 10px;
+}
 @media screen and (max-width: 500px) {
   :root {
   }
   body {
-    background-color: orange;
+    /* background-color: orange; */
   }
 }
