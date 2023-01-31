@@ -88,6 +88,10 @@ p {
   color: var(--color-dark-gray);
   margin: 4px 0;
 }
+section {
+  margin-bottom: 200px;
+}
+
 .fa-github:hover {
   opacity: 0.5;
   cursor: pointer;
@@ -114,18 +118,17 @@ p {
 
 .navbar {
   width: 100%;
-
-  height: 70px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--background-color);
   z-index: 1;
+  transition: all 0.7s ease-in-out;
 }
 .nav-hidden {
-  opacity: 0;
-  transition: all 0.7s ease-in-out;
+  display: none;
+  /* opacity: 0; */
 }
 .nav-show {
   opacity: 1;
@@ -164,23 +167,23 @@ p {
   border: none;
 }
 
-.one:hover {
+.profile-btn:hover {
   background-color: var(--rainbow-red);
   color: white;
 }
-.two:hover {
+.skills-btn:hover {
   background-color: var(--rainbow-orange);
   color: white;
 }
-.three:hover {
+.projects-btn:hover {
   background-color: var(--rainbow-green);
   color: rgb(255, 255, 255);
 }
-.four:hover {
+.comment-btn:hover {
   background-color: var(--rainbow-blue);
   color: white;
 }
-.five:hover {
+.contact-btn:hover {
   background-color: var(--rainbow-purple);
   color: white;
 }
@@ -302,7 +305,7 @@ section {
   object-fit: cover;
   filter: brightness(3.2);
 }
-.profile {
+#profile {
   position: relative;
   text-align: center;
 }
@@ -514,12 +517,14 @@ section {
 }
 @media screen and (max-width: 700px) {
   :root {
+    overflow-x: hidden;
   }
+
   .nav-hidden {
     opacity: 1;
   }
   #main {
-    display: none;
+    /* display: none; */
   }
   .main-container {
     transform: scale(0.6);
