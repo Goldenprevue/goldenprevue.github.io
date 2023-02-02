@@ -32,6 +32,14 @@ document.addEventListener('click', (e) => {
   }
 });
 
+const toggleBtn = document.querySelector('.navbar-menu');
+nav.addEventListener('click', () => {
+  if (window.matchMedia('(max-width: 700px)').matches === true) {
+    console.log('토글');
+    toggleBtn.classList.toggle('open');
+  }
+});
+
 //circle 사라지게 하기
 const main = document.querySelector('#main');
 const height = main.getBoundingClientRect().height;
