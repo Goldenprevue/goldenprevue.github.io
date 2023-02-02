@@ -7,6 +7,17 @@ logo.addEventListener('click', () => {
   document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
 });
 
+const navSelect = document.querySelector('.navbar-item');
+document.addEventListener('click', (e) => {
+  console.log(
+    e.target.classList.forEach((element) => {
+      return element;
+    })
+  );
+
+  e.target.classList.add('select');
+});
+
 // 스크롤 이벤트가 발생시 지정된 위치에서 Nav bar가 나오는 함수
 document.addEventListener('scroll', () => {
   if (window.scrollY > 685) {
