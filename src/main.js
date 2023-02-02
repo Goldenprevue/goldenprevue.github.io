@@ -7,17 +7,6 @@ logo.addEventListener('click', () => {
   document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
 });
 
-const navSelect = document.querySelector('.navbar-item');
-document.addEventListener('click', (e) => {
-  console.log(
-    e.target.classList.forEach((element) => {
-      return element;
-    })
-  );
-
-  e.target.classList.add('select');
-});
-
 // 스크롤 이벤트가 발생시 지정된 위치에서 Nav bar가 나오는 함수
 document.addEventListener('scroll', () => {
   if (window.scrollY > 685) {
@@ -28,17 +17,18 @@ document.addEventListener('scroll', () => {
     nav.classList.remove('nav-show');
   }
 });
-
+const navItem = document.querySelector('.profile-btn');
 // 카테고리 클릭시 이동하는 함수( Navbar, circle)
 document.addEventListener('click', (e) => {
   const target = e.target.dataset.link;
-  // console.log(profileBtn.includes());
-  console.log(target);
   if (target == null) {
     return;
   } else {
     const moveScroll = document.querySelector(target);
     moveScroll.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const selected = document.querySelector('.select');
+    selected.classList.remove('select');
+    e.target.classList.add('select');
   }
 });
 
@@ -47,7 +37,6 @@ const main = document.querySelector('#main');
 const height = main.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   main.style.opacity = 0.8 - window.scrollY / height;
-  console.log(height);
 });
 
 // const body = document.querySelector('body');
