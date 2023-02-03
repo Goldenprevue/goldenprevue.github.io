@@ -547,10 +547,9 @@ section {
   :root {
     overflow-x: hidden;
   }
-
-  /* .nav-hidden {
-    opacity: 1;
-  } */
+  .section {
+    padding: 16px;
+  }
   .logo {
     width: 30px;
   }
@@ -580,10 +579,7 @@ section {
   .open {
     display: block;
   }
-  .skills {
-    position: relative;
-    top: 90px;
-  }
+
   .skill-box {
     position: relative;
     flex-direction: column;
@@ -604,12 +600,11 @@ section {
   }
   .projects {
     position: relative;
-    top: 290px;
+    top: 100px;
     margin-left: auto;
     margin-right: auto;
   }
-  .project-item {
-  }
+
   .project-title {
     display: flex;
     flex-direction: column;
@@ -619,18 +614,10 @@ section {
     position: relative;
     top: -120px;
   }
-  .projects-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 90px;
-  }
 
   .comment {
     position: relative;
-    top: 1100px;
+    top: 80px;
     display: flex;
     flex-direction: column;
   }
@@ -647,7 +634,7 @@ section {
   }
   .contact {
     position: relative;
-    top: 1500px;
+    top: 100px;
     left: 0;
   }
   .line {

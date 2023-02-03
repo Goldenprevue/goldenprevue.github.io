@@ -2,12 +2,10 @@
 const logo = document.querySelector('.logo');
 const nav = document.querySelector('.navbar');
 
-// 로고를 클릭시 메인화면(첫화면)으로 넘어가는 기능
 logo.addEventListener('click', () => {
   document.querySelector('body').scrollIntoView({ behavior: 'smooth' });
 });
 
-// 스크롤 이벤트가 발생시 지정된 위치에서 Nav bar가 나오는 함수
 document.addEventListener('scroll', () => {
   if (window.scrollY > 685) {
     nav.classList.remove('nav-hidden');
@@ -18,7 +16,6 @@ document.addEventListener('scroll', () => {
   }
 });
 const navItem = document.querySelector('.profile-btn');
-// 카테고리 클릭시 이동하는 함수( Navbar, circle)
 document.addEventListener('click', (e) => {
   const target = e.target.dataset.link;
   if (target == null) {
@@ -32,34 +29,26 @@ document.addEventListener('click', (e) => {
   }
 });
 
-const toggleBtn = document.querySelector('.navbar-menu');
-nav.addEventListener('click', () => {
+const toggleBtn = document.querySelector('.fa-bars');
+const navbarMenu = document.querySelector('.navbar-menu');
+const navbarItems = document.querySelectorAll('.navbar-item');
+toggleBtn.addEventListener('click', (e) => {
   if (window.matchMedia('(max-width: 700px)').matches === true) {
-    console.log('토글');
-    toggleBtn.classList.toggle('open');
+    console.log(e.target);
+    navbarMenu.classList.toggle('open');
+    // navbarItem.classList.toggle('open');
+    console.log(toggleBtn.classList);
   }
 });
+navbarItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+  });
+});
 
-//circle 사라지게 하기
+//circle opacity
 const main = document.querySelector('#main');
 const height = main.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
   main.style.opacity = 0.8 - window.scrollY / height;
 });
-
-// const body = document.querySelector('body');
-// const profileCircle = document.querySelector('.m-profile');
-// const navbarHeight = nav.getBoundingClientRect().height;
-
-// const profile = document.querySelector('#profile');
-// const skills = document.querySelector('#skills');
-// const projects = document.querySelector('#projects');
-// const comment = document.querySelector('#comment');
-// const contact = document.querySelector('#contact');
-
-// const profileBtn = document.querySelectorAll('.profile-btn, .m-profile');
-
-// const skillsBtn = document.querySelector('.skills-btn');
-// const projectsBtn = document.querySelector('.projects-btn');
-// const commentBtn = document.querySelector('.comment-btn');
-// const contactBtn = document.querySelector('.contact-btn');
