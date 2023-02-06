@@ -71,7 +71,7 @@ let selectedNavItem = navItems[0];
 const observerOption = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.5,
+  threshold: 0.6,
 };
 const callBackObserver = (entries, observer) => {
   entries.forEach((entry) => {
@@ -91,6 +91,11 @@ const callBackObserver = (entries, observer) => {
       selectedNavItem.classList.remove('select');
       selectedNavItem = navItems[selectedIndex];
       selectedNavItem.classList.add('select');
+      // console.log(entry.target.id);
+      // if ((entry.target.id = 'main')) {
+      //   selectedNavItem.classList.add('selec');
+      // } else {
+      // }
     }
     // const contactSelect = entry.document.querySelector('.contact');
 

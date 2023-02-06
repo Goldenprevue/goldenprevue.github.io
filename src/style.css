@@ -165,7 +165,9 @@ section#comment {
 }
 
 .select {
-  border: 0.5px solid rgb(188, 187, 187);
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+  /* font-weight: 500; */
 }
 
 .toggle-icon {
