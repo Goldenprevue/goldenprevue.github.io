@@ -526,6 +526,7 @@ section {
   height: 60vh;
   max-height: 450px;
   margin-top: 40px;
+  margin-bottom: 0;
   background-color: var(--color-gray);
 }
 .contact h1 {
@@ -559,6 +560,7 @@ section {
   .toggle-icon {
     background-color: transparent;
     display: block;
+    cursor: pointer;
   }
   .navbar {
     flex-direction: column;
@@ -569,7 +571,7 @@ section {
   }
   .navbar-menu {
     position: relative;
-    top: 120px;
+    top: 140px;
     flex-direction: column;
     text-align: center;
     width: 100%;
@@ -634,7 +636,7 @@ section {
   }
   .contact {
     position: relative;
-    top: 100px;
+    top: 190px;
     left: 0;
   }
   .line {
